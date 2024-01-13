@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" 
+         integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" 
+         crossorigin="anonymous">
+
+        <link rel = "stylesheet" href = "mainStyle(mix).css">
+
+	<title>Catering</title>
+	<style>
+	.container-fluid {
+			padding: 50px 50px;
+	}
+	.bg-grey {
+			background-color: #95a5a6;
+	}
+	</style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+     <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+       <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+	<a class="navbar-brand" href="#myPage"><img src="vanilla culture.png" class="img-circle" width="40" position="top right" alt="vanilla culture"></a>
+          <span class="logo-text">Vanilla Culture</span></a>
+       </div>
+       <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav navbar-right">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="signup3.html">Register</a></li>
+            <li><a href="customize event3.html">Customize Event</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="about us 2.html">About Us</a></li>
+         </ul>
+        <div class="profile-register">
+                <a href="file:///C:/aWEB%20DESIGN%203133/WWW/profiless.html"><i class="fa fa-user"></i></a>
+         </div>
+       </div>
+     </div>
+   </nav>
+<div id="decor" class="container-fluid text-align bg-grey">
+   <h1><b>Catering</b></h1>
+
+   <div class="flex-container">
+     <div class = "row">
+       <div class = "col-md-5 sidebar">
+         <div class = "category-wrapper">
+           <div class = "category-container">
+             <h2>Category</h2>
+               <select>
+                 <option value = "category1">Wedding Cakes</option>
+                 <option value = "category2">Drinks & Beverages</option>
+                 <option value = "category3">Caterers</option>
+                 <option value = "category4">Desserts</option>
+               </select>
+               
+           </div>
+
+         <div class = "vendor-container">
+            <h2>Vendors</h2>
+            <form id = "vendorForm">
+               <input type = "text" name = "vendor" placeholder = "Enter vendor">
+            </form>
+          </div>
+          <div class = "search-container">    
+            <button type="search" class="btn" onclick="searchVendor()">Search</button>
+          </div>
+     </div>
+   </div>
+
+     <div class="col-md-7 slideshow-container">
+        <div class="mySlides">
+          <img src="picture1.jpg" alt="picture1" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="picture2.jpg" alt="picture2" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="picture3.jpg" alt="picture3" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+     </div>
+    </div>
+  </div><br>
+
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+document.querySelector(".btn").addEventListener("click", function() {
+  // Get the selected category and vendor name
+  const selectedCategory = document.querySelector("select").value;
+  const vendorName = document.querySelector("#vendorForm input").value;
+
+  // Redirect to the appropriate website based on category and vendor
+  redirectToVendorWebsite(selectedCategory, vendorName);
+});
+
+function redirectToVendorWebsite(category, vendorName) {
+  // Replace this with your logic to determine vendor URLs based on category and name
+  const vendorWebsite = getVendorWebsite(category, vendorName);
+
+  // If a website is found, redirect to it
+  if (vendorWebsite) {
+    window.location.href = vendorWebsite;
+  } else {
+    // Handle the case where no website is found (e.g., display an error message)
+    alert("Vendor not found");
+  }
+}
+
+function getVendorWebsite(category, vendorName) {
+  const vendorData = {
+    // Example data structure:
+    "category1": {
+      "Vendor A": "https://theweddingnotebook.com/inspire/ideas-and-advice/malaysian-bakers-to-create-your-dream-wedding-cake/",
+      "Vendor B": "https://www.buttercakefactory.com/WeddingCakes.html"
+    },
+    "category2": {
+      "Vendor A": "https://www.foodservicemalaysia.com/category/cid/266630/cat/beverage/",
+      "Vendor B": "https://www.dbsfreshmart.com.my/ourproducts/cid/412886/cat/beverage/"
+    },
+    "category3": {
+      "Vendor A": "https://orangecatering.my/",
+      "Vendor B": "https://supplies2u.my/collections/custom-print-and-manufactured-catering-supplies"
+    },
+     "category4": {
+      "Vendor A": "https://desserts.my/",
+      "Vendor B": "https://wownana.co/pages/pastries-and-desserts-supply-to-cafes-and-restaurant"
+    },
+    
+  };
+
+  return vendorData[category]?.[vendorName]; // Use optional chaining for safe access
+}
+
+  </script>
+     </div> 
+  <!-- Footer section -->
+  <footer>
+    &copy; 2023 VANILLA CULTURE. All rights reserved.
+  </footer>
+
+</body>
+</html>

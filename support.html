@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" 
+         integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" 
+         crossorigin="anonymous">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Support</title>
+	
+    <link rel="stylesheet" href="navigatestyle.css">
+        <style>
+
+               
+             .thumbnail {
+                        margin-left: 10%;
+                        padding: 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        width: 900px
+                        
+                }
+                .thumbnail p {
+                        font-size: 60px;
+                }
+                .thumbnail img {
+                        width: 890px;
+                        height: 440px;
+                        object-fit: cover;
+                }
+                .newspaper {
+                    float: center;
+                    column-count: 1;
+                    overflow-wrap:break-word ;
+                    text-align: justify;
+                    width: 90%;
+                
+                }
+
+                .Text{
+                     
+                     float: right;
+                     margin-right: 25px;
+                     padding-right: 20px;
+                     width: 27%;
+                     text-align: justify;
+                     font-size: 18px;
+                  }
+
+                  #displayarea{
+                    width: 200px;
+                  }
+
+                  .buttoN {
+                        flex: auto;
+                        border: none;
+                        color: white;
+                        padding: 15px 75px;
+                        text-align: left;
+                        display: inline-flex;
+                        font-size: 20px;
+                        margin: 20px 8px;
+                        margin-left: 3%;
+                        width: 40%;
+                        height: 50px;
+                        top: auto;
+                        cursor: pointer;
+                        color: #fff;
+                        border: none;
+                        border-radius: 4px;
+                        transition: background-color 0.3s ease;
+                }
+                buttoN:hover {
+                    background-color: #2980b9;
+                }
+                .Btext{
+                    float:left;
+                    text-align: justify;
+                }
+
+                
+
+
+                .button1 {
+                    background-color: #112030;
+                    font-size: 12px;
+                } 
+                .button2 {
+                    background-color: #112030;
+                    font-size: 12px;
+                } 
+                .button3 {
+                    float: left;
+                    background-color: #112030;
+                    margin-bottom: 70px;
+                    width : 28%
+                    
+                } 
+                .button4 {
+                    float: left;
+                    background-color: #112030;
+                    margin-bottom: 70px;
+                    width : 28%;
+                    
+                } 
+
+                p {
+      font-size: 18px;
+      color: #333;
+    }
+        </style>
+    </head>
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+             <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+          <a class="navbar-brand" href="#myPage"><img src="vanilla culture.png" class="img-circle" width="40" position="top right" alt="vanilla culture"></a>
+                <span class="logo-text">Vanilla Culture</span></a>
+             </div>
+             <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="main.html">Home</a></li>
+                  <li><a href="signup3.html">Register</a></li>
+                  <li><a href="customize event3.html">Customize Event</a></li>
+                  <li><a href="support.html">Support</a></li>
+                  <li><a href="about us 2.html">About Us</a></li>
+               </ul>
+               <div class="profile-register">
+                <a href="file:///C:/aWEB%20DESIGN%203133/WWW/profiless.html"><i class="fa fa-user"></i></a>
+        </div>
+             </div>
+           </div>
+         </nav>
+
+         
+         <div class="container-fluid text-center bg-grey"></div>
+         <div class="Text" >
+            <h2>Event Item</h2>
+            <ul class="EventItem" style="width: 210px;">
+                <li><a href="catering.html" style="color: #112030; ">Catering</a></li>
+               
+                <li><a href="decor.html" style="color: #112030; width: 60px;">Decor</a></li>
+                <div id="category1Display" style="width: 200px; text-align: left;"></div>
+                <div id="category2Display" style="width: 200px; text-align: left;"></div>
+                <div id="category3Display" style="width: 200px; text-align: left;"></div>
+
+
+<script>
+  function displayData(category, containerId) {
+    const storedData = localStorage.getItem('allSelectedData');
+
+    if (storedData) {
+      const allSelectedData = JSON.parse(storedData);
+
+      if (allSelectedData[category]) {
+        const selectedData = allSelectedData[category];
+        const displayArea = document.getElementById(containerId);
+        displayArea.innerHTML = '<p>' + category+ ':' + selectedData.join(', ') + '</p>';
+      } else {
+        console.log(`No ${category} data available.`);
+      }
+    } else {
+      console.log('No data available.');
+    }
+  }
+
+  displayData('Location', 'category1Display');
+  displayData('Decoration', 'category2Display');
+  displayData('Event Props', 'category3Display');
+  // Call displayData for additional categories as needed
+</script>
+   
+                <li><a href="media.html" style="color: #112030;">Media</a></li>
+                <div id="displayArea"></div>
+
+<script>
+  const storedData = localStorage.getItem('selectedData');
+  
+  if (storedData) {
+    const selectedData = JSON.parse(storedData);
+    const displayArea = document.getElementById('displayArea');
+    displayArea.innerHTML = '<p>selected: ' + selectedData.join(', ') + '</p>';
+  } else {
+    console.log('No data available.');
+  }
+</script>
+
+             </ul>
+            
+            <div class="newspaper">
+                
+                    </div>
+                    <div class="Btext">
+                   <a href="customize event3.html">
+                    <button class="buttoN button1">
+                    CUSTOMIZE EVENT</button></a>
+
+               <button class="buttoN button2" class="buttoN button3" onclick="PayNow()">PAYMENT</button>
+                <script>
+                  function PayNow() {
+                    var confirmation = confirm('Want to continue make payment?');
+                
+                    if (confirmation) {
+                      alert('Thank you, payment successfully!');
+                      
+                    } else {
+                      alert('Cancel payment.');
+                      
+                    }
+                  }
+                </script>
+            </div>
+           </div>
+
+         <div class="row text-center slideanim">
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                <img src="order(1).jpg" alt="EVent" width="1500px" height="500px">
+              </div>
+            </div>
+            
+        </div>
+      <button class="buttoN button3" onclick="showCancelConfirmation()">CANCEL ORDER</button>
+
+<script>
+  function showCancelConfirmation() {
+    var confirmation = confirm('Want to continue to cancel the order?');
+
+    if (confirmation) {
+      alert('Order canceled successfully!');
+      // Additional logic for canceling the order can be added here
+    } else {
+      alert('Cancel operation aborted.');
+      // Additional logic for cancel operation aborted can be added here
+    }
+  }
+</script>
+        
+            <a href="about us 2.html">
+            <button class="buttoN button4">CONTACT US</button></a>
+
+
+         <!-- Footer section -->
+  <footer>
+    &copy; 2023 VANILLA CULTURE. All rights reserved.
+  </footer>
+    </body>
+</html>

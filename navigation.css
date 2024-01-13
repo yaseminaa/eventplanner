@@ -1,0 +1,96 @@
+body {
+                 	font: 400 15px calibri, sans-serif;
+                        line-height: 1.8;
+                        width:100%;
+                }
+                .container-fluid {
+                        padding: 60px 50px;
+                }
+                .bg-grey {
+                        background-color: #fffcfc;        
+                }
+		.navbar{
+			background-color: #3E515B; 
+                        font-family: calibri;
+                        padding-bottom: 1px;
+                        padding-right: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+		}
+                .navbar li:hover {
+                        background-color: #075081;
+                    }
+		.navbar li a{
+			color: #fff !important;
+		}
+		.navbar-default .navbar-toggle {
+			border-color: transparent;
+			color: #fff !important;
+		}
+		.navdiv{
+                        margin-left: 40px;
+		}
+                .navbar-header {
+                        display: flex;
+                        align-items: center;
+                }
+                .navbar-brand {
+                        display: flex;
+                        align-items: center;
+                }
+		.logo a{
+			font-size: 35px; 
+                        font-weight: 600; 
+                        color: white;
+                        display: flex;
+                        align-items: center;
+				}
+                .logo-text {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-right: auto;
+                        color: white;
+                }
+
+		li{
+			list-style: none; 
+                        display: inline-block;
+						
+		}
+		li a{
+			color: white; 
+			font-size: 18px; 
+			font-weight: bold; 
+			margin-right: 25px;
+		}
+		button{
+			background-color: white;
+    			margin-left: 10px; 
+    			border-radius: 10px; 
+    			padding: 10px; 
+    			width: 80px;
+		}
+		button a{
+			color: white; 
+    			font-weight: bold; 
+    			font-size: 15px;
+		}
+
+		.profile-icon {
+    			margin-left: 10px;
+    			margin-right: 10px;
+		
+                }
+                /* New styles for the footer */
+                footer {
+                        position: fixed;
+                        bottom: 0;
+                        width: 100%;
+                        background-color: #3E515B;
+                        color: white;
+                        text-align: center;
+                        padding: 10px 0;
+                }

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" 
+         integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" 
+         crossorigin="anonymous">
+     
+        <link rel = "stylesheet" href = "navigatestyle.css">
+
+	<title>Decor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.navbar-dropdown {
+      display: flex;
+      padding-top: 20px;
+      justify-content: space-between;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      margin-right: 120px;
+      margin-left: 160px;
+      margin-bottom: 0;
+}
+
+.navbar-dropdown a {
+      display: block;
+      padding: 10px 20px;
+      font-size: 25px;
+      background-color: #3E515B;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      border: 2px solid #ccc; /* Individual border for each item */
+      border-radius: 15px; /* Optional: Add border-radius for rounded corners */
+      transition: background-color 0.3s ease;
+}
+
+.navbar-dropdown .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-right: 5px;
+}
+
+.navbar-dropdown .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      width: 250px;
+}
+
+.navbar-dropdown .dropdown-content label input[type="checkbox"] {
+      margin-right: 5px; /* Adjust margin as needed */
+}
+
+.container-fluid {
+			padding: 50px 50px;
+	}
+	.bg-grey {
+			background-color: #95a5a6;
+	}
+.dropdown-content label {
+      display: block;
+      cursor: pointer;
+      margin-bottom: 5px;
+      font-size: 15px;
+      text-align: left;
+      margin-left: 10px;
+      z-index: 1;
+}
+
+/* Change color on hover */
+.navbar-dropdown .dropdown-content label:hover {
+       background-color: #f1f1f1;
+}
+
+/* Show the dropdown content when hovering over the dropdown container */
+.navbar-dropdown .dropdown:hover .dropdown-content {
+       display: block;
+} 
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -5px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.multi-slideshows {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+
+.slideshow1, .slideshow2, .slideshow3 { 
+     max-width: 25%;
+     position: relative;
+     display: inline-block;
+     height: 80%;
+     box-sizing: border-box;
+     padding-top: 100px;
+     margin-left: 30px;
+     margin-right: 50px;
+}
+
+h1 {
+   padding-top: 40px;
+   margin-left: 20px;
+   padding-bottom: 40px;
+}
+
+
+
+</style>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+     <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+       <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+	<a class="navbar-brand" href="#myPage"><img src="vanilla culture.png" class="img-circle" width="40" position="top right" alt="vanilla culture"></a>
+          <span class="logo-text">Vanilla Culture</span>
+       </div>
+       <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav navbar-right">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="signup3.html">Register</a></li>
+            <li><a href="customize event3.html">Customize Event</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="about us 2.html">About Us</a></li>
+         </ul>
+         <div class="profile-register">
+                <a href="file:///C:/aWEB%20DESIGN%203133/WWW/profiless.html"><i class="fa fa-user"></i></a>
+         </div>
+       </div>
+      </div>
+     </nav>
+<div id="decor" class="container-fluid text-align bg-grey">
+     <h1><b>Decor</b></h1>
+
+     <nav class = "navbar-dropdown">
+          <div class = "dropdown">
+            <a href = "#" onclick = "toggleDropDown('place')">Place<i class = "fa fa-caret-down"></i></a>
+            <form id="checkboxForm">
+            <div class = "dropdown-content">
+              <label><input type = "checkbox" name="Location" value = "Garden">Garden</label>
+              <label><input type = "checkbox" name="Location" value = "Hotel/Conference Centre">Hotel/Conference Centre</label>
+              <label><input type = "checkbox" name="Location" value = "Restaurant/Cafe">Restaurant/Cafe</label>
+              <label><input type = "checkbox" name="Location" value = "Museum/Art Galleries">Museum/Art Galleries</label>
+            </div>
+          </form>
+          </div>
+
+          <div class = "dropdown">
+              <a href = "#" onclick = "toggleDropDown('decoration&lighting')">Decoration & Lighting <i class = "fa fa-caret-down"></i></a>
+              <div class = "dropdown-content">
+                <label><input type = "checkbox" name="Decoration" value = "Centerpieces">Centerpieces</label>   
+                <label><input type = "checkbox" name="Decoration" value = "Backdrops">Backdrops</label>  
+                <label><input type = "checkbox" name="Decoration" value = "String Lights">String Lights</label>
+                <label><input type = "checkbox" name="Decoration" value = "Uplighting">Uplighting</label>
+                <label><input type = "checkbox" name="Decoration" value = "Table Lighting">Table Lighting</label>
+                <label><input type = "checkbox" name="Decoration" value = "Balloon Decorations">Balloon Decorations</label>
+                <label><input type = "checkbox" name="Decoration" value = "Projection Mapping">Projection Mapping</label>
+              </div>
+          
+          </div>
+
+          <div class = "dropdown">
+               <a href = "#" onclick = "toggleDropDown('eventprops')">Event Props <i class = "fa fa-caret-down"></i></a>
+               <div class = "dropdown-content">
+                 <label><input type = "checkbox" name="Event Props" value = "Photo Booth Props">Photo Booth Props</label>
+                 <label><input type = "checkbox" name="Event Props" value = "Signage & Banners">Signage & Banners</label>
+                 <label><input type = "checkbox" name="Event Props"  value = "Themed Decorations">Themed Decorations</label>
+                 <label><input type = "checkbox" name="Event Props"  value = "Furniture & Seating">Furniture & Seating</label>
+                 <label><input type = "checkbox" name="Event Props"  value = "Interactive Props">Interactive Props</label>
+                 <label><input type = "checkbox" name="Event Props"  value = "Stage Props">Stage Props</label>
+                 <label><input type = "checkbox" name="Event Props"  value = "Tabletop Props">Tabletop Props</label>
+               </div>
+            </div>
+
+
+            <button onclick="saveData()">Save</button>
+
+<script>
+  function saveData() {
+    const categories = ['Location', 'Decoration', 'Event Props']; // Add more categories as needed
+    const allSelectedData = {};
+
+    categories.forEach(category => {
+      const checkboxes = document.querySelectorAll(`input[name="${category}"]:checked`);
+      const selectedData = Array.from(checkboxes).map(checkbox => checkbox.value);
+      allSelectedData[category] = selectedData;
+    });
+
+    localStorage.setItem('allSelectedData', JSON.stringify(allSelectedData));
+
+    window.location.href = 'support.html';
+  }
+</script>
+       </nav>
+
+     <div class = "multi-slideshows">
+       <div class = "slideshow1" id = "slideshow1">
+         <div class="mySlides1">
+           <img src="place1.png" alt="place1" style="width:100%">
+         </div>
+         <div class="mySlides1">
+           <img src="place2.png" alt="place2" style="width:100%">
+         </div>
+         <div class="mySlides1">
+           <img src="place3.png" alt="place3" style="width:100%">
+         </div>
+
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       </div><br>
+       
+       <div class = "slideshow2" id = "slideshow2">
+         <div class="mySlides2">
+           <img src="decor1.jpg" alt="decor1" style="width:100%">
+         </div>
+         <div class="mySlides2">
+           <img src="decor2.jpg" alt="decor2" style="width:100%">
+         </div>
+         <div class="mySlides2">
+           <img src="decor3.jpg" alt="decor3" style="width:100%">
+         </div>
+
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       </div><br>
+
+       <div class = "slideshow3" id = "slideshow3">
+         <div class="mySlides3">
+           <img src="prop1.png" alt="prop1" style="width:300px; height:250px;">
+         </div>
+         <div class="mySlides3">
+           <img src="prop2.png" alt="prop2" style="width:300px; height:250px;">
+         </div>
+         <div class="mySlides3">
+           <img src="prop3.png" alt="prop3" style="width:300px; height:250px;">
+         </div>
+
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       </div>
+    </div>
+	
+
+<script>
+    function toggleDropDown(item) {
+       console.log('Toggling dropdown for:', item);
+       var dropdownContent = document.querySelector('.dropdown-content[data-dropdown="' + item + '"]');
+        var checkboxes = dropdownContent.querySelectorAll('input[type="checkbox"]');
+
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener('change', function () {
+                console.log('Checkbox state changed:', checkbox.value, checkbox.checked);
+            });
+        });
+    }
+
+    (function() {
+    let slideIndex = [1,1,1];
+    let slideId = ["mySlides1", "mySlides2", "mySlides3"];
+   
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+      let i;
+      let x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {
+        slideIndex[no] = 1;
+      }
+      if (n < 1) {
+        slideIndex[no] = x.length;
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex[no]-1].style.display = "block";
+    }
+  
+    showSlides(slideIndex[0], 0);
+    showSlides(slideIndex[1], 1);
+    showSlides(slideIndex[2], 2);
+
+    document.querySelector(".prev").addEventListener("click", function () {
+        plusSlides(-1, 0);
+        plusSlides(-1, 1);
+        plusSlides(-1, 2);
+    });
+
+    document.querySelector(".next").addEventListener("click", function () {
+        plusSlides(1, 0);
+        plusSlides(1, 1);
+        plusSlides(1, 2);
+    });
+ })();
+
+</script>
+</div>
+
+
+<!-- Footer section -->
+  <footer>
+    &copy; 2023 VANILLA CULTURE. All rights reserved.
+  </footer>
+
+</body>
+</html>

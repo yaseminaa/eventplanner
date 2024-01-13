@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FAQs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" 
+         integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" 
+         crossorigin="anonymous">
+		 
+         <link rel="stylesheet" href="style.css">
+		 
+  <style>
+  
+	 body {
+            font: 400 16px calibri, sans-serif;
+            line-height: 1.8;
+            }
+    .container-fluid {
+            padding: 60px 50px;
+            }
+			
+    .bg-grey {
+            background-color: #fffcfc;
+            }
+			
+	.jumbotron {
+			background-color: #FFC0CB;
+			color: #fff;
+			padding: 100px 250px;
+			font-family: Montserrat, sans-serif;
+	}
+	.container-fluid {
+			padding: 50px 50px;
+	}
+	.bg-grey {
+			background-color: #FFEFD5;
+	}
+	h2 {
+			color: black; /* Add this line to set the text color to white */
+			text-align:left;
+				}
+	.navbar{
+			background-color: #3E515B; 
+			font-family: calibri;
+            padding-bottom: 5px;
+			padding-top: 5px;
+            padding-right: 30px;
+            display: flex;
+            align-items: center;
+			justify-content: space-between;
+	}
+	.navdiv{
+            margin-left: 40px;
+	}
+    .navbar-header {
+            display: flex;
+            align-items: center;
+    }
+    .navbar-brand {
+            display: flex;
+            align-items: center;
+    }
+	.navbar li a{
+			color: #fff !important;
+	}
+   .navbar-default .navbar-toggle {
+			border-color: transparent;
+			color: #fff !important;
+	}
+	/* horizontal nav */
+		.profile-register {
+			position: absolute;
+			top: 10px;
+			right: 5px; /* Adjust right position */
+		}
+		.profile-register a {
+			text-decoration: none;
+			color: white;
+			padding: 6px 6px; /* Adjust padding as needed */
+			margin-left: 5px; /* Adjust margin between links */
+			font-size: 20px; /* Increase the font size */
+		}
+		.profile-register a i{
+			margin-right: 10px;
+			color: white;
+		}
+		/* Change color on hover */
+		.profile-register a:hover ,
+		.profile-register a:hover i{
+			color: grey;
+		}
+  
+		/* Change color on click */
+		.profile-register a:active {
+			color: grey;
+		}
+	.logo a{
+			font-size: 35px; 
+            font-weight: 600; 
+            color: white;
+            display: flex;
+            align-items: center;
+	}
+    .logo-text {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: auto;
+            color: white;
+    }
+	li{
+			list-style: none; 
+            display: inline-block;
+	}
+	li a{
+			color: white; 
+            font-size: 18px; 
+            font-weight: bold; 
+            margin-right: 25px;
+	}
+	.container-fluid .button{
+			background-color: white;
+            margin-left: 10px;
+			margin-bottom:10px;
+            border-radius: 10px; 
+            padding: 3px; 
+            width: 80px;
+	}
+	button a{
+			color: black; 
+            font-weight: bold; 
+            font-size: 15px;
+	}
+	.thumbnail {
+			padding: 10px;
+			border: 2px solid #ccc;
+			border-radius: 10px;
+	}
+    .thumbnail p {
+			font-size: 20px;
+    }
+    .thumbnail img {
+			width: 80%;
+			height: 300px;
+			object-fit: cover;
+    }
+    .profile-icon {
+            margin-left: 10px;
+            margin-right: 10px;
+	}
+	.icon-link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 5px;
+	}
+	@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+	*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+	}
+	html,body{
+			  display: grid;
+			  height: 100%;
+			  width: 100%;
+			  place-items: center;
+			  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+	}
+	.wrapper .button{
+			  display: inline-block;
+			  height: 60px;
+			  width: 60px;
+			  margin: 0 5px;
+			  overflow: hidden;
+			  background: #fff;
+			  border-radius: 50px;
+			  cursor: pointer;
+			  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+			  transition: all 0.3s ease-out;
+	}
+	.wrapper .button:hover{
+			  width: 200px;
+	}
+	.wrapper .button .icon{
+			  display: inline-block;
+			  height: 60px;
+			  width: 60px;
+			  text-align: center;
+			  border-radius: 50px;
+			  box-sizing: border-box;
+			  line-height: 60px;
+			  transition: all 0.3s ease-out;
+	}
+	.wrapper .button:nth-child(1):hover .icon{
+			 background: #4267B2;
+	}
+	.wrapper .button:nth-child(2):hover .icon{
+			 background: #1DA1F2;
+	}
+	.wrapper .button:nth-child(3):hover .icon{
+			background: #E1306C;
+	}
+	.wrapper .button:nth-child(4):hover .icon{
+			background: #333;
+	}
+	.wrapper .button:nth-child(5):hover .icon{
+			background: #ff0000;
+	}
+	.wrapper .button .icon i{
+			font-size: 25px;
+			line-height: 60px;
+			transition: all 0.3s ease-out;
+	}
+	.wrapper .button:hover .icon i{
+			color: #fff;
+	}
+	.wrapper .button span{
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 60px;
+			margin-left: 10px;
+			transition: all 0.3s ease-out;
+	}
+	.wrapper .button:nth-child(1) span{
+			color: #4267B2;
+	}
+	.wrapper .button:nth-child(2) span{
+			color: #1DA1F2;
+	}
+	.wrapper .button:nth-child(3) span{
+			color: #E1306C;
+	}
+	.wrapper .button:nth-child(4) span{
+			color: #333;
+	}
+	.wrapper .button:nth-child(5) span{
+			color: #ff0000;
+	}
+	/* New styles for the footer */
+    footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #3E515B;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+    }
+  </style>
+</head>
+<!-- Navigation bar -->
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+     <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+       <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+	<a class="navbar-brand" href="#myPage"><img src="vanilla culture.png" class="img-circle" width="50" position="top right" alt="vanilla culture"></a>
+          <span class="logo-text">Vanilla Culture</span></a>
+       </div>
+       <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav navbar-right">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="signup3.html">Register</a></li>
+            <li><a href="customize event3.html">Customize Event</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="about us 2.html">About Us</a></li>
+			<div class="profile-register"> 
+          <a href="file:///C:/aWEB%20DESIGN%203133/WWW/profiless.html"><i class="fa fa-user"></i></a>
+		</div>
+         </ul>
+       </div>
+     </div>
+   </nav>
+   
+   <!-- FAQs Section -->
+<section id="faqs" class="container-fluid">
+  <h2>Frequently Asked Questions (FAQs)</h2><br>
+  
+  <!-- FAQ 1 -->
+  <div class="thumbnail">
+    <h3>
+      <a data-toggle="collapse" href="#faq1" role="button" aria-expanded="false" aria-controls="faq1">
+        Question 1: What is Vanilla Culture?
+      </a>
+    </h3>
+    <div class="collapse" id="faq1">
+      <p>Vanilla Culture is your all-in-one destination for seamless event planning and management.</p>
+    </div>
+  </div>
+  
+  <!-- FAQ 2 -->
+  <div class="thumbnail">
+    <h3>
+      <a data-toggle="collapse" href="#faq2" role="button" aria-expanded="false" aria-controls="faq2">
+        Question 2: What services does Vanilla Culture offer for event planning?
+      </a>
+    </h3>
+    <div class="collapse" id="faq2">
+      <p>Vanilla Culture provides a comprehensive suite of tools for event planning and management, including dynamic event creation, budget management, RSVP tracking, and vendor coordination.</p>
+    </div>
+  </div>
+  
+  <!-- FAQ 3 -->
+  <div class="thumbnail">
+    <h3>
+      <a data-toggle="collapse" href="#faq3" role="button" aria-expanded="false" aria-controls="faq3">
+        Question 3: How do I create an event on Vanilla Culture?
+      </a>
+    </h3>
+    <div class="collapse" id="faq3">
+      <p>To create an event, simply log in to your account, navigate to the dashboard, and use the intuitive event creation tools. Follow the step-by-step process to add details, set preferences, and customize your event.</p>
+    </div>
+  </div>
+  
+  <!-- FAQ 4 -->
+  <div class="thumbnail">
+    <h3>
+      <a data-toggle="collapse" href="#faq4" role="button" aria-expanded="false" aria-controls="faq4">
+        Question 4: Can I customize the design and layout of my event page?
+      </a>
+    </h3>
+    <div class="collapse" id="faq4">
+      <p>Absolutely! Vanilla Culture offers a user-friendly interface with customization options for the design and layout of your event page. Experiment with colors, fonts, and layouts to make your event unique.</p>
+    </div>
+  </div>
+  
+  <!-- FAQ 5 -->
+  <div class="thumbnail">
+    <h3>
+      <a data-toggle="collapse" href="#faq5" role="button" aria-expanded="false" aria-controls="faq5">
+        Question 5: How can I invite attendees and manage RSVPs?
+      </a>
+    </h3>
+    <div class="collapse" id="faq5">
+      <p>Invite attendees directly from your event page or share the unique event link. Vanilla Culture allows you to track RSVPs in real-time, helping you manage guest lists and plan accordingly.</p>
+    </div>
+  </div>
+  
+  <!-- FAQ 6 -->
+  <div class="thumbnail">
+    <h3>
+      <a data-toggle="collapse" href="#faq6" role="button" aria-expanded="false" aria-controls="faq6">
+        Question 6: Is Vanilla Culture mobile-friendly?
+      </a>
+    </h3>
+    <div class="collapse" id="faq6">
+      <p>Yes, Vanilla Culture is designed to be fully responsive, ensuring a seamless experience on both desktop and mobile devices. Manage your events on the go with our mobile-friendly platform.</p>
+    </div>
+  </div>
+  
+  <!-- FAQ 7 -->
+  <div class="thumbnail">
+    <h3>
+      <a data-toggle="collapse" href="#faq7" role="button" aria-expanded="false" aria-controls="faq7">
+        Question 7: How can I register on Vanilla Culture?
+      </a>
+    </h3>
+    <div class="collapse" id="faq7">
+      <p>To register on Vanilla Culture, visit our <a href="file:///C:/SEM%203/CSF3133(WEB)/assignment/Signup.html">Sign Up page</a>...</p>
+    </div>
+  </div>
+</section>
+
+<!-- Feedback Section -->
+<section id="feedback" class="container-fluid">
+  <h2>Customer Feedback</h2>
+
+  <!-- Customer Feedback Form -->
+  <form>
+    <div class="form-group">
+      <label for="feedbackInput">Your Feedback:</label>
+      <textarea class="form-control" id="feedbackInput" rows="4"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary" onclick="showConfirmation()">Submit Feedback</button>
+	<script>
+  function showConfirmation() {
+    var confirmation = confirm('Want to continue to submit the feedback?');
+
+    if (confirmation) {
+      alert('Submitted successfully! Thank you in advance!');
+      // Additional logic for canceling the order can be added here
+    } else {
+      alert('Cancel operation aborted.');
+      // Additional logic for cancel operation aborted can be added here
+    }
+  }
+</script>
+  </form>
+
+  <!-- Display Customer Feedback -->
+  <div class="mt-4">
+    <h3>Recent Feedback:</h3>
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text">"Great platform for event planning! The customization options are fantastic."</p>
+      </div>
+    </div>
+
+    <!-- Add more feedback cards as needed -->
+  </div>
+</section>
+
+<div class="testimonials">
+      <div class="inner">
+        <h1>What Our Clients Say</h1>
+        <div class="border"></div>
+
+        <div class="row">
+          <div class="col">
+            <div class="testimonial">
+              <img src="p1.png" alt="">
+              <div class="name">John Devid</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p>
+                I love the customization options. Vanilla Culture truly stands out in the event planning space.
+              </p>
+            </div>
+          </div>
+<div class="col">
+
+            <div class="testimonial">
+              <img src="p2.png" alt="">
+              <div class="name">Sally Menna</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <p>
+                Vanilla Culture made event planning a breeze. Highly recommended for all organizers.</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="p3.png" alt="">
+              <div class="name">Alesandra Mikayla</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p>
+                Amazing experience with Vanilla Culture! The team helped make our event truly special.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Contact Icons Section -->
+<section id="contact-icons" class="container-fluid mt-4">
+  <h2>Contact</h2>
+  <div class="row">
+    <div class="col-md-3">
+      <a href="https://www.facebook.com/your_facebook_page" target="_blank" class="icon-link">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="https://www.instagram.com/accounts/login/" target="_blank" class="icon-link">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+    </div>
+	<div class="col-md-3">
+      <a href="tel:+123456789" class="icon-link">
+        <i class="fas fa-phone fa-2x"></i>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="mailto:your@email.com" class="icon-link">
+        <i class="far fa-envelope fa-2x"></i>
+      </a>
+    </div>
+  </div>
+</section>
+   
+
+<!-- Footer section -->
+  <footer>
+    &copy; 2023 VANILLA CULTURE. All rights reserved.
+  </footer>
+</body>
+</html>

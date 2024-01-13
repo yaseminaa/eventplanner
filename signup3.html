@@ -1,0 +1,243 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" 
+         integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" 
+         crossorigin="anonymous">
+
+		<title>Sign up form</title>
+		<style>
+                body {
+                        font: 400 15px calibri, sans-serif;
+                        line-height: 1.8;
+						align-items: center;
+						justify-content: center;
+						background-color: lightgrey;
+						background-image: url("background login2.jpg");
+						color: black;
+						font-weight: bold;
+                }
+				h2 {
+						color: white; /* Add this line to set the text color to white */
+						font-weight: bold;
+				}
+				h1 {
+						color: black; /* Add this line to set the text color to white */
+						font-weight: bold;
+				}
+                .container-fluid {
+                        padding: 60px 50px;
+						text-align: center;
+                }
+                .bg-grey {
+                        background-color: #fffcfc;
+                }
+				.navbar{
+						background-color: #3E515B; 
+                        font-family: calibri;
+                        padding-bottom: 5px;
+                        padding-right: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+				}
+				.navbar li a{
+						color: #fff !important;
+				}
+				.navbar-default .navbar-toggle {
+						border-color: transparent;
+						color: #fff !important;
+				}
+				.navdiv{
+						margin-left: 40px;
+				}
+                .navbar-header {
+                        display: flex;
+                        align-items: center;
+                }
+                .navbar-brand {
+                        display: flex;
+                        align-items: center;
+                }
+				/* Styling for the Profile and Register links */
+				/* horizontal nav */
+				.profile-register {
+						position: absolute;
+						top: 10px;
+						right: 5px; /* Adjust right position */
+					}
+				.profile-register a {
+					text-decoration: none;
+					color: white;
+					padding: 6px 6px; /* Adjust padding as needed */
+					margin-left: 5px; /* Adjust margin between links */
+					font-size: 20px; /* Increase the font size */
+				}
+				.profile-register a i{
+					margin-right: 10px;
+					color: white;
+				}
+				/* Change color on hover */
+				.profile-register a:hover ,
+				.profile-register a:hover i{
+					color: grey;
+				}
+		  
+				/* Change color on click */
+				.profile-register a:active {
+					color: grey;
+				}
+				.logo a{
+						font-size: 35px; 
+                        font-weight: 600; 
+                        color: white;
+                        display: flex;
+                        align-items: center;
+				}
+                .logo-text {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-right: auto;
+                        color: white;
+                }
+				ul {
+					    padding: 0;
+					    margin: 0;
+					    list-style: none;
+					    display: flex;
+				}
+
+				li{
+						list-style: none; 
+                        display: inline-block;
+						
+				}
+				li a{
+						color: white; 
+                        font-size: 18px; 
+                        font-weight: bold; 
+                        margin-right: 25px;
+				}
+		
+				.container_2 {
+						max-width: 370px;
+						padding: 20px;
+						background-color: lightgray;
+						opacity: 0.9;
+						text-align: center;
+						border-radius: 20px;
+						border: 3px solid #ccc;
+						margin: 3.5px auto; /* Updated to center the container horizontally */
+						justify-content: center;
+						align-items: center;
+						height:430;
+				}
+
+						input[type="text"],
+						input[type="password"] {
+						width: 100%;
+						padding: 10px;
+						margin: 4.5px 0;
+						box-sizing: border-box;
+				}
+				.btn {
+						 background-color: #4caf50;
+						 color: white;
+						 padding: 15px;
+						 border: none;
+						 cursor: pointer;
+						 width: 100%;
+						 opacity: 0.9;
+						 border-radius: 5px;
+				}
+				.btn:hover {
+						  opacity: 1;
+				}
+                .forgot-password {
+							text-align: right;
+							margin-top: 10px;
+				}
+				.or-divider {
+						margin: 15px 0;
+						font-weight: bold;
+				}
+				.profile-icon {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                }
+                /* New styles for the footer */
+                footer {
+                        position: fixed;
+                        bottom: 0;
+                        width: 100%;
+                        background-color: #3E515B;
+                        color: white;
+                        text-align: center;
+                        padding: 10px 0;
+                }
+	 </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+     <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+       <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+	<a class="navbar-brand" href="#myPage"><img src="vanilla culture.png" class="img-circle" width="40" position="top right" alt="vanilla culture"></a>
+          <span class="logo-text">Vanilla Culture</span></a>
+       </div>
+       <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav navbar-right">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="signup3.html">Register</a></li>
+            <li><a href="customize event3.html">Customize Event</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="about us 2.html">About Us</a></li>
+			<div class="profile-register">
+          <a href="file:///C:/aWEB%20DESIGN%203133/WWW/profiless.html"><i class="fa fa-user"></i></a>
+		</div>
+         </ul>
+       </div>
+     </div>
+   </nav>
+   
+ <section id="register" class="container-fluid">
+  <h2> Register your account</h2>
+  <div class="container_2">
+    <h1>Sign up</h1>
+    <form action="loginnew.html">
+      <label for="email"></label>
+      <input type="text" placeholder="Username or Email" name="email" required>
+
+      <label for="psw"></label>
+      <input type="password" placeholder="Password" name="psw" required>
+
+      <button type="submit" class="btn">Sign up</button>
+
+      <p class="or-divider">----------- OR -----------</p>
+      <button type="submit" class="btn">Sign up with Google</button>
+	  <p class="or-divider">Already have an <a href="loginnew.html">account?</a></p>
+    </form>
+  </div>
+  </section>
+  
+<!-- Footer section -->
+        <footer>
+            &copy; 2023 VANILLA CULTURE. All rights reserved.
+        </footer>
+</body>
+</htm>
